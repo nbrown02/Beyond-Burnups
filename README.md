@@ -52,10 +52,12 @@ for `REPLACE`) telling you exactly what goes there.
 Search each HTML file for `REPLACE` (all-caps, easy to grep for) to find
 everything left to fill in:
 
-- **Purchase links:** every "Buy the book" button across the site links
-  to `buy.html`, which is where the real retailer links live. On
-  `buy.html`, update `#buy-link-amazon` to your Amazon (or KDP) listing
-  URL, and `#buy-link-leanpub` to your Leanpub book page URL.
+- **Purchase links:** every Amazon/Leanpub button across the site
+  (homepage hero, the three chapter pages, `buy.html`, and `contact.html`)
+  currently points at `https://mybook.to/realworldagility` (Amazon) and
+  `https://leanpub.com/realworldagility` (Leanpub). Both are real,
+  working links, update them site-wide with a find-and-replace across
+  the `.html` files whenever the real listing URLs are ready.
 - **Retailer cards:** `buy.html` has an Amazon card, a Leanpub card, and
   a "coming soon" card. Duplicate the card markup for any further
   retailer or format (audiobook, regional store) as they go live.
