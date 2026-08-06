@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>When Will It Be Done? | Beyond Burnups</title>
+<meta name="description" content="Single-team Monte Carlo forecasting: how it replaces the false certainty of a Burnup chart with an honest range of completion dates.">
+<link rel="canonical" href="https://beyondburnups.com/when-will-it-be-done.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="When Will It Be Done? | Beyond Burnups">
+<meta property="og:description" content="How single-team Monte Carlo forecasting replaces the false certainty of a Burnup chart.">
+<meta property="og:url" content="https://beyondburnups.com/when-will-it-be-done.html">
+<meta property="og:image" content="https://beyondburnups.com/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a href="/" class="brand" aria-label="Beyond Burnups, home">
+      <img src="/images/cover.jpg" alt="" class="brand-cover">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">      <li><a href="/when-will-it-be-done.html" aria-current="page">When Will It Be Done?</a></li>
+      <li><a href="/feature-monte-carlo.html">Epic/Feature Monte Carlo</a></li>
+      <li><a href="/multi-team-monte-carlo.html">Multi-team Monte Carlo</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="chapter-hero">
+    <div class="container">
+      <p class="eyebrow">Single-team forecasting</p>
+      <h1>When will it be done?</h1>
+      <p class="lede">The question behind every roadmap update. A Burnup answers it with one date, calculated from an average. Monte Carlo answers it with a range of dates, each with a stated likelihood, which is closer to how delivery actually behaves.</p>
+
+      <div class="chart-frame" style="aspect-ratio: 1386 / 468;">
+        <img src="/images/charts/when-will-it-be-done.gif" alt="Animated Monte Carlo simulation building a histogram of possible completion dates, with a confidence-level breakdown" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <p class="cover-placeholder" style="display:none; align-items:center; justify-content:center; height:100%; padding: 0 2rem; text-align:center;">[REPLACE: /images/charts/when-will-it-be-done.gif]<br>Chart animation</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section raised">
+    <div class="container">
+      <div class="topic-sections">
+
+        <div class="topic-block">
+          <div><span class="section-label">What it is</span></div>
+          <div>
+            <h3>Single-team Monte Carlo forecasting</h3>
+            <p>Monte Carlo forecasting runs your team's actual historical throughput through thousands of simulated futures, replacing one deterministic date with a distribution of likely completion dates, each attached to a confidence level.</p>
+          </div>
+        </div>
+
+        <div class="topic-block">
+          <div><span class="section-label">When to use it</span></div>
+          <div>
+            <h3>A single team, working through a single backlog</h3>
+            <p>The starting point: one team, one backlog, and a "when will it be done?" answer that needs to hold up better than a Burnup's projected intersection point.</p>
+          </div>
+        </div>
+
+        <div class="topic-block">
+          <div><span class="section-label">When not to use it</span></div>
+          <div>
+            <h3>Once more than one team or Feature is involved</h3>
+            <p>If a single team is juggling multiple Features or Epics at once, use <a href="/feature-monte-carlo.html">Epic/Feature Monte Carlo</a> instead. If the work spans multiple teams, use <a href="/multi-team-monte-carlo.html">Multi-team Monte Carlo</a>.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ TOOLS FOR JIRA ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Free Tools for Jira</h2>
+      </div>
+      <div class="retailer-grid">
+        <div class="retailer-card">
+          <h3>Windows<br>Desktop</h3>
+          <p>Download the template to connect to your data (needs Power BI Desktop).</p>
+          <a href="https://thrivve.short.gy/Forecast1" class="btn btn-outline" target="_blank" rel="noopener">Download</a>
+        </div>
+        <div class="retailer-card">
+          <h3>Web-based for Mac &amp; Windows<br>(Power BI App)</h3>
+          <p>Install the template app and connect to your data without the need to download.</p>
+          <a href="https://thrivve.short.gy/Forecast3" class="btn btn-outline" target="_blank" rel="noopener">Install</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLS FOR AZURE DEVOPS (ADO) ============ -->
+  <section class="section raised">
+    <div class="container">
+      <div class="section-head">
+        <h2>Free Tools for Azure DevOps (ADO)</h2>
+      </div>
+      <div class="retailer-grid">
+        <div class="retailer-card">
+          <h3>Windows<br>Desktop</h3>
+          <p>Download the template to connect to your data (needs Power BI Desktop).</p>
+          <a href="https://thrivve.short.gy/Forecast2" class="btn btn-outline" target="_blank" rel="noopener">Download</a>
+        </div>
+        <div class="retailer-card">
+          <h3>Web-based for Mac &amp; Windows<br>(Power BI App)</h3>
+          <p>Install the template app and connect to your data without the need to download.</p>
+          <a href="https://thrivve.short.gy/Forecast4" class="btn btn-outline" target="_blank" rel="noopener">Install</a>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top: var(--space-4);">
+        <a href="https://thrivve.short.gy/Forecast5" target="_blank" rel="noopener">Not ready to connect your own data? Try the demo with dummy data &rarr;</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Read the full chapter and the maths behind it</h2>
+      <p>Beyond Burnups walks through the accuracy of this approach, what to do with unpredictable data, and why story points aren't the input you think they are.</p>
+      <p style="margin-top: var(--space-3);">
+        <a href="/buy.html" class="btn btn-primary">Buy the book</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>&copy; <span id="year">2026</span> Nicolas Brown. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

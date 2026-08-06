@@ -1,0 +1,9 @@
+# This project deploys with zero config when you connect the repo directly
+# in the Cloudflare Pages dashboard — see README.md for those steps.
+#
+# This file is only needed if you'd rather deploy from the command line
+# with the Wrangler CLI instead (`npx wrangler pages deploy .`).
+
+name = "beyondburnups"
+compatibility_date = "2026-08-06"
+pages_build_output_dir = "."

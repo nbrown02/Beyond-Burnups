@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epic/Feature Monte Carlo | Beyond Burnups</title>
+<meta name="description" content="When several Features or Epics compete for the same team's throughput, plain Monte Carlo isn't enough. Here's how Feature-level Monte Carlo handles it.">
+<link rel="canonical" href="https://beyondburnups.com/feature-monte-carlo.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Epic/Feature Monte Carlo | Beyond Burnups">
+<meta property="og:description" content="How Feature-level Monte Carlo forecasts multiple Features competing for one team's throughput.">
+<meta property="og:url" content="https://beyondburnups.com/feature-monte-carlo.html">
+<meta property="og:image" content="https://beyondburnups.com/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a href="/" class="brand" aria-label="Beyond Burnups, home">
+      <img src="/images/cover.jpg" alt="" class="brand-cover">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">      <li><a href="/when-will-it-be-done.html">When Will It Be Done?</a></li>
+      <li><a href="/feature-monte-carlo.html" aria-current="page">Epic/Feature Monte Carlo</a></li>
+      <li><a href="/multi-team-monte-carlo.html">Multi-team Monte Carlo</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="chapter-hero">
+    <div class="container">
+      <p class="eyebrow">When one team runs several things at once</p>
+      <h1>Epic/Feature Monte Carlo</h1>
+      <p class="lede">A single team rarely works on just one thing. Once several Features or Epics are drawing from the same pool of throughput, "how long will ten items take?" becomes "how will throughput be split, and what does that mean for each Feature?"</p>
+
+      <div class="chart-frame" style="aspect-ratio: 1403 / 734;">
+        <img src="/images/charts/feature-monte-carlo.gif" alt="Animated chart showing forecasted completion ranges for several Epics/Features at once, ranked by priority" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <p class="cover-placeholder" style="display:none; align-items:center; justify-content:center; height:100%; padding: 0 2rem; text-align:center;">[REPLACE: /images/charts/feature-monte-carlo.gif]<br>Chart animation</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section raised">
+    <div class="container">
+      <div class="topic-sections">
+
+        <div class="topic-block">
+          <div><span class="section-label">What it is</span></div>
+          <div>
+            <h3>Monte Carlo with Feature-level WIP built in</h3>
+            <p>Feature Monte Carlo applies the same simulation principles as single-team forecasting, but adds Feature-level work in progress as a variable, so each Feature in flight gets its own range of likely completion dates and its own confidence level.</p>
+          </div>
+        </div>
+
+        <div class="topic-block">
+          <div><span class="section-label">When to use it</span></div>
+          <div>
+            <h3>One team, several Features or Epics in parallel</h3>
+            <p>Use this the moment a single team is carrying more than one Feature or Epic at a time and stakeholders want a completion forecast for each one individually, not just for the backlog as a whole.</p>
+          </div>
+        </div>
+
+        <div class="topic-block">
+          <div><span class="section-label">When not to use it</span></div>
+          <div>
+            <h3>When there's only one thing in flight, or the work spans multiple teams</h3>
+            <p>If your team only has one Feature or Epic active at a time, plain <a href="/when-will-it-be-done.html">single-team Monte Carlo</a> is simpler and just as accurate. If the initiative spans more than one team, use <a href="/multi-team-monte-carlo.html">Multi-team Monte Carlo</a> instead.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ TOOLS FOR JIRA ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Free Tools for Jira</h2>
+      </div>
+      <div class="retailer-grid">
+        <div class="retailer-card">
+          <h3>Windows<br>Desktop</h3>
+          <p>Download the template to connect to your data (needs Power BI Desktop).</p>
+          <a href="https://thrivve.short.gy/Forecast6" class="btn btn-outline" target="_blank" rel="noopener">Download</a>
+        </div>
+        <div class="retailer-card">
+          <h3>Web-based for Mac &amp; Windows<br>(Power BI App)</h3>
+          <p>Install the template app and connect to your data without the need to download.</p>
+          <a href="https://thrivve.short.gy/Forecast7" class="btn btn-outline" target="_blank" rel="noopener">Install</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLS FOR AZURE DEVOPS (ADO) ============ -->
+  <section class="section raised">
+    <div class="container">
+      <div class="section-head">
+        <h2>Free Tools for Azure DevOps (ADO)</h2>
+      </div>
+      <div class="retailer-grid">
+        <div class="retailer-card">
+          <h3>Windows<br>Desktop</h3>
+          <p>Download the template to connect to your data (needs Power BI Desktop).</p>
+          <a href="https://thrivve.short.gy/Forecast6" class="btn btn-outline" target="_blank" rel="noopener">Download</a>
+        </div>
+        <div class="retailer-card">
+          <h3>Web-based for Mac &amp; Windows<br>(Power BI App)</h3>
+          <p>Install the template app and connect to your data without the need to download.</p>
+          <a href="https://thrivve.short.gy/Forecast8" class="btn btn-outline" target="_blank" rel="noopener">Install</a>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top: var(--space-4);">
+        <a href="https://thrivve.short.gy/Forecast9" target="_blank" rel="noopener">Not ready to connect your own data? Try the demo with dummy data &rarr;</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>See the maths behind Feature-level forecasting</h2>
+      <p>Beyond Burnups shows exactly how Feature WIP multiplies the number of possible outcomes, and how to simulate it properly.</p>
+      <p style="margin-top: var(--space-3);">
+        <a href="/buy.html" class="btn btn-primary">Buy the book</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>&copy; <span id="year">2026</span> Nicolas Brown. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

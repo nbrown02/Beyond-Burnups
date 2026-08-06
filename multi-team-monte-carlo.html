@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-team Monte Carlo | Beyond Burnups</title>
+<meta name="description" content="Why multiplying independent per-team confidence levels understates risk, and how Multi-Team Monte Carlo models a multi-team initiative as one combined system.">
+<link rel="canonical" href="https://beyondburnups.com/multi-team-monte-carlo.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Multi-team Monte Carlo | Beyond Burnups">
+<meta property="og:description" content="How Multi-Team Monte Carlo forecasts an initiative that spans teams and dependencies.">
+<meta property="og:url" content="https://beyondburnups.com/multi-team-monte-carlo.html">
+<meta property="og:image" content="https://beyondburnups.com/images/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a href="/" class="brand" aria-label="Beyond Burnups, home">
+      <img src="/images/cover.jpg" alt="" class="brand-cover">
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-links">      <li><a href="/when-will-it-be-done.html">When Will It Be Done?</a></li>
+      <li><a href="/feature-monte-carlo.html">Epic/Feature Monte Carlo</a></li>
+      <li><a href="/multi-team-monte-carlo.html" aria-current="page">Multi-team Monte Carlo</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="chapter-hero">
+    <div class="container">
+      <p class="eyebrow">When an initiative spans teams</p>
+      <h1>Multi-team Monte Carlo</h1>
+      <p class="lede">Stitch together three teams' independent 85%-confidence forecasts and you don't get an 85% chance the initiative lands. You get closer to 61%. Multi-Team Monte Carlo models the whole initiative as one system instead of hoping separate forecasts add up.</p>
+
+      <div class="chart-frame" style="aspect-ratio: 1368 / 762;">
+        <img src="/images/charts/multi-team-monte-carlo.gif" alt="Animated chart showing per-team throughput and confidence inputs combining into a single initiative-level forecast" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <p class="cover-placeholder" style="display:none; align-items:center; justify-content:center; height:100%; padding: 0 2rem; text-align:center;">[REPLACE: /images/charts/multi-team-monte-carlo.gif]<br>Chart animation</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section raised">
+    <div class="container">
+      <div class="topic-sections">
+
+        <div class="topic-block">
+          <div><span class="section-label">What it is</span></div>
+          <div>
+            <h3>One simulation for the whole initiative, not several stitched together</h3>
+            <p>Running a separate forecast per team and combining the confidence levels understates the real risk: the true likelihood of every team landing together is the product of each team's confidence, not the level any one of them chose. Three teams each "85% confident" isn't an 85% confident initiative, it's closer to 61%.</p>
+          </div>
+        </div>
+
+        <div class="topic-block">
+          <div><span class="section-label">When to use it</span></div>
+          <div>
+            <h3>An initiative that depends on more than one team</h3>
+            <p>Reach for this when a program or initiative needs a single, defensible completion forecast, especially where teams depend on each other's output or compete for shared resources.</p>
+          </div>
+        </div>
+
+        <div class="topic-block">
+          <div><span class="section-label">When not to use it</span></div>
+          <div>
+            <h3>When the work sits with one team</h3>
+            <p>If the work belongs to a single team, use <a href="/when-will-it-be-done.html">single-team Monte Carlo</a>, or <a href="/feature-monte-carlo.html">Epic/Feature Monte Carlo</a> if several Features are in flight. Multi-Team Monte Carlo earns its complexity once teams and dependencies enter the picture.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ TOOLS FOR JIRA ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Free Tools for Jira</h2>
+      </div>
+      <div class="retailer-grid">
+        <div class="retailer-card">
+          <h3>Windows<br>Desktop</h3>
+          <p>Download the template to connect to your data (needs Power BI Desktop).</p>
+          <a href="https://thrivve.short.gy/Forecast10" class="btn btn-outline" target="_blank" rel="noopener">Download</a>
+        </div>
+        <div class="retailer-card">
+          <h3>Web-based for Mac &amp; Windows<br>(Power BI App)</h3>
+          <p>Install the template app and connect to your data without the need to download.</p>
+          <a href="https://thrivve.short.gy/Forecast11" class="btn btn-outline" target="_blank" rel="noopener">Install</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLS FOR AZURE DEVOPS (ADO) ============ -->
+  <section class="section raised">
+    <div class="container">
+      <div class="section-head">
+        <h2>Free Tools for Azure DevOps (ADO)</h2>
+      </div>
+      <div class="retailer-grid">
+        <div class="retailer-card">
+          <h3>Windows<br>Desktop</h3>
+          <p>Download the template to connect to your data (needs Power BI Desktop).</p>
+          <a href="https://thrivve.short.gy/Forecast10" class="btn btn-outline" target="_blank" rel="noopener">Download</a>
+        </div>
+        <div class="retailer-card">
+          <h3>Web-based for Mac &amp; Windows<br>(Power BI App)</h3>
+          <p>Install the template app and connect to your data without the need to download.</p>
+          <a href="https://thrivve.short.gy/Forecast12" class="btn btn-outline" target="_blank" rel="noopener">Install</a>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top: var(--space-4);">
+        <a href="https://thrivve.short.gy/Forecast13" target="_blank" rel="noopener">Not ready to connect your own data? Try the demo with dummy data &rarr;</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>See how the maths actually multiplies</h2>
+      <p>Beyond Burnups walks through a real multi-team example, step by step, including how to handle dependencies between teams.</p>
+      <p style="margin-top: var(--space-3);">
+        <a href="/buy.html" class="btn btn-primary">Buy the book</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>&copy; <span id="year">2026</span> Nicolas Brown. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
