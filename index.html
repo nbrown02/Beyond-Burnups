@@ -13,7 +13,6 @@
 <meta property="og:title" content="Beyond Burnups, A better way to forecast delivery">
 <meta property="og:description" content="Why Burnup charts mislead, why 'just do Monte Carlo' isn't the fix either, and how to forecast delivery properly across features, teams, and dependencies.">
 <meta property="og:url" content="https://beyondburnups.com/">
-<!-- REPLACE: /images/og-image.jpg, 1200x630px social share image (book cover works well on a brand-colour background) -->
 <meta property="og:image" content="https://beyondburnups.com/images/og-image.jpg">
 <meta property="og:site_name" content="Beyond Burnups">
 
@@ -29,6 +28,50 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
+
+<style>
+/* Homepage purchase buttons */
+.hero-actions {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-actions .btn {
+  font-size: 0.78rem;
+  padding: 0.85em 0.9em;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.btn-white {
+  background: #ffffff;
+  color: #14202e;
+  border: 1px solid #ffffff;
+  font-weight: 600;
+}
+
+.btn-white:hover {
+  background: #e8edf0;
+  color: #14202e;
+  border-color: #e8edf0;
+}
+
+/* Keep buttons usable on smaller screens */
+@media (max-width: 1100px) {
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-actions .btn {
+    font-size: 0.82rem;
+    padding: 0.85em 1em;
+  }
+}
+</style>
 </head>
 <body>
 
@@ -61,13 +104,12 @@
         <div class="hero-actions">
           <a href="https://buy.stripe.com/14A8wPcKLcDVboR1ERbo400" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Buy a Signed Copy</a>
           <a href="https://mybook.to/beyondburnups" class="btn btn-teal" target="_blank" rel="noopener">Buy on Amazon</a>
-          <a href="https://leanpub.com/beyondburnups" class="btn btn-ghost" target="_blank" rel="noopener">Buy on Leanpub</a>
+          <a href="https://leanpub.com/beyondburnups" class="btn btn-white" target="_blank" rel="noopener">Buy on Leanpub</a>
         </div>
       </div>
 
       <div class="hero-cover-wrap">
         <div class="cover-frame">
-          <!-- REPLACE: /images/cover.jpg, book cover, portrait, ~600x900px (2:3 ratio) -->
           <img src="/images/cover.jpg" alt="Beyond Burnups book cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <p class="cover-placeholder" style="display:none;">[REPLACE: /images/cover.jpg]<br>Book cover, 2:3 ratio<br>e.g. 600 × 900px</p>
         </div>
@@ -123,7 +165,6 @@
       <div class="author-grid">
         <div>
           <div class="author-photo-frame">
-            <!-- REPLACE: /images/author-photo.jpg, square headshot, min 500x500px -->
             <img src="/images/author-photo.jpg" alt="Nicolas Brown, author of Beyond Burnups" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
             <p class="cover-placeholder" style="display:none; align-items:center; justify-content:center; height:100%;">[REPLACE:<br>/images/author-photo.jpg]<br>Square, 500×500px+</p>
           </div>
