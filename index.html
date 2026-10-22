@@ -32,17 +32,22 @@
 <style>
 /* Homepage purchase buttons */
 .hero-actions {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
 }
 
 .hero-actions .btn {
-  font-size: 0.78rem;
-  padding: 0.85em 0.9em;
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  min-height: 54px;
+  padding: 12px 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .btn-white {
@@ -58,17 +63,41 @@
   border-color: #e8edf0;
 }
 
-/* Keep buttons usable on smaller screens */
-@media (max-width: 1100px) {
-  .hero-actions {
-    flex-wrap: wrap;
-  }
+/* Buttons in the second purchase section */
+.purchase-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: var(--space-4);
 }
 
+.purchase-actions .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  min-height: 54px;
+  padding: 12px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Responsive purchase buttons */
 @media (max-width: 600px) {
-  .hero-actions .btn {
-    font-size: 0.82rem;
-    padding: 0.85em 1em;
+  .hero-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions .btn,
+  .purchase-actions .btn {
+    width: 100%;
+    min-height: 54px;
+  }
+
+  .purchase-actions {
+    flex-direction: column;
   }
 }
 </style>
@@ -101,10 +130,26 @@
         <p class="eyebrow">A book about forecasting, not guessing</p>
         <h1>Burnup charts feel certain.<br>They rarely are.</h1>
         <p class="lede">Burnup charts are familiar, easy to build, and trusted by almost every agile team. They're also quietly misleading: a straight line into the future assumes stable scope and a consistent delivery rate, assumptions that rarely survive real product work. But "just do Monte Carlo" isn't the fix either. Once Feature WIP and cross-team dependencies enter the picture, simple probabilistic models start to break too. Beyond Burnups builds forecasting back up properly, feature by feature, team by team, until you're treating delivery the way an underwriter treats risk: with ranges, evidence, and an honest number instead of a hopeful one.</p>
+
         <div class="hero-actions">
-          <a href="https://buy.stripe.com/14A8wPcKLcDVboR1ERbo400" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Buy a Signed Copy</a>
-          <a href="https://mybook.to/beyondburnups" class="btn btn-teal" target="_blank" rel="noopener">Buy on Amazon</a>
-          <a href="https://leanpub.com/beyondburnups" class="btn btn-white" target="_blank" rel="noopener">Buy on Leanpub</a>
+          <a href="https://buy.stripe.com/14A8wPcKLcDVboR1ERbo400"
+             class="btn btn-primary"
+             target="_blank"
+             rel="noopener noreferrer">
+            Buy a Signed Copy
+          </a>
+          <a href="https://mybook.to/beyondburnups"
+             class="btn btn-teal"
+             target="_blank"
+             rel="noopener">
+            Buy on Amazon
+          </a>
+          <a href="https://leanpub.com/beyondburnups"
+             class="btn btn-white"
+             target="_blank"
+             rel="noopener">
+            Buy on Leanpub
+          </a>
         </div>
       </div>
 
@@ -127,11 +172,27 @@
       <p>Most teams answer "when will it be done?" with a Burnup chart: completed work climbing toward a scope line until it crosses a projected date. It looks like a forecast. It's really an average dressed up as a certainty.</p>
       <p>Beyond Burnups explains why that approach breaks down, then rebuilds forecasting from the ground up using Monte Carlo simulation: starting with a single team and a single backlog, extending to Feature-level forecasting when several pieces of work compete for the same throughput, and scaling up to Multi-Team Monte Carlo for initiatives that span teams and dependencies. Later chapters cover where AI genuinely helps, how to forecast value rather than just dates, and how to bring sceptical stakeholders along with you.</p>
       <p>It's written to be read in an evening and put to work the next day, with free, open-source tools referenced throughout so you can apply it to your own data immediately.</p>
-      <p style="text-align:center; margin-top: var(--space-4); display:flex; gap: var(--space-2); justify-content:center; flex-wrap: wrap;">
-        <a href="https://buy.stripe.com/14A8wPcKLcDVboR1ERbo400" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Buy a Signed Copy</a>
-        <a href="https://mybook.to/beyondburnups" class="btn btn-teal" target="_blank" rel="noopener">Buy on Amazon</a>
-        <a href="https://leanpub.com/beyondburnups" class="btn btn-outline" target="_blank" rel="noopener">Buy on Leanpub</a>
-      </p>
+
+      <div class="purchase-actions">
+        <a href="https://buy.stripe.com/14A8wPcKLcDVboR1ERbo400"
+           class="btn btn-primary"
+           target="_blank"
+           rel="noopener noreferrer">
+          Buy a Signed Copy
+        </a>
+        <a href="https://mybook.to/beyondburnups"
+           class="btn btn-teal"
+           target="_blank"
+           rel="noopener">
+          Buy on Amazon
+        </a>
+        <a href="https://leanpub.com/beyondburnups"
+           class="btn btn-outline"
+           target="_blank"
+           rel="noopener">
+          Buy on Leanpub
+        </a>
+      </div>
     </div>
   </section>
 
